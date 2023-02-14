@@ -9,9 +9,13 @@ public class Curso extends Conteudo{
         return XP_PADRAO * cargaHoraria;
     }
 
-    public Curso() {
+    public static Curso criarCurso(String titulo, String descricao, int cargaHoraria) {
+        Curso curso = new Curso();
+        curso.setTitulo(titulo);
+        curso.setDescricao(descricao);
+        curso.setCargaHoraria(cargaHoraria);
+        return curso;
     }
-
 
     public int getCargaHoraria() {
         return cargaHoraria;
